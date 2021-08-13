@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// CUSTOM CSS BELOW
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.3em;
+}
+header {
+  display: flex;
+  line-height: 2em;
+  padding: 25px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+nav {
+  > * {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    background-color: rgba(255, 255, 255);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-out;
+    width: 100%;
+    a {
+      display: block;
+      padding: 25px;
+    }
+  }
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 25px 0;
+}
+p {
+  padding-bottom: 25px;
+  // line-height: 1.2em;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+li {
+  padding: 15px 0;
+}
+footer {
+  margin: 50px 0 auto;
+  display: block;
+  text-align: center;
+  padding: 100px;
+  background: #eee;
+}
+.contentWrapper {
+  margin: 0 auto;
+  max-width: 1050px;
+  padding: 0 1rem;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 800px) {
+  .about {
+    .aboutWrapper {
+      display: flex;
+      justify-content: space-between;
+      > * {
+        width: 49%;
+      }
+    }
+  }
+}
+
+.imgGallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  .imgWrapper {
+    /* flex settings can be basically anything */
+    flex: 1 0 auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border: 25px solid white;
+    @media (min-width: 400px) {
+      width: 50%;
+    }
+    @media (min-width: 900px) {
+      width: 30%;
+    }
+  }
+
+  .imgWrapper:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+.contact {
+  label {
+    display: block;
+    margin-top: 25px;
+    color: #888;
+  }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  textarea {
+    min-height: 250px;
+  }
+  button {
+    display: block;
+    margin: 25px auto;
+    padding: 25px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(13, 133, 8);
+    color: #fff;
+    font-size: 1.3em;
+  }
+}
+
+.video {
+  .videoWrapper {
+    margin-bottom: 25px;
+  }
+}
