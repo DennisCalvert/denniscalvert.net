@@ -17,6 +17,7 @@ const features = [
           src="https://improvephotography.com/?powerpress_embed=36193-podcast&powerpress_player=mediaelement-audio"
           frameborder="0"
           scrolling="no"
+          title="Improve Photography"
         />
       </>
     ),
@@ -24,11 +25,15 @@ const features = [
   {
     href: "http://www.slate.com/blogs/browbeat/2011/10/26/paranormal_light_painting_activity_.html",
 
-    title: "Slate Feature",
+    title: "Slate",
   },
   {
     href: "https://www.southernliving.com/travel/2016-people-changing-south?slide=1f8dc520-b339-47d5-b2a7-1c7a2e2cfc46#1f8dc520-b339-47d5-b2a7-1c7a2e2cfc46",
     title: "Southern Living - Innovators Changing the South",
+  },
+  {
+    href: "https://mymodernmet.com/dennis-calvert-flashlight-photography/",
+    title: "My Modern Met",
   },
   {
     href: "https://lightpaintingphotography.com/light-painting-artist/featured-artist-2/dennis-calvert/",
@@ -91,15 +96,12 @@ export default function Component() {
               linear. We see multiple moments all at once. We become time
               travelers.
             </p>
-
             <p>
               Dennis’s light paintings are straight out of the camera with NO
               digital manipulation whatsoever. The effects are all created in
               camera during the exposure.
             </p>
-
             <h2 id="who-is-dennis">Who is Dennis?</h2>
-
             <p>
               Dennis Calvert is a photographer and software engineer living in
               Birmingham, Alabama.
@@ -117,6 +119,7 @@ export default function Component() {
             src="https://www.youtube.com/embed/sd--AdjwNcg"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            title="Dennis Calvert"
             allowfullscreen
           ></iframe>
         </div>

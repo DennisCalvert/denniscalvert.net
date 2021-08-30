@@ -226,31 +226,39 @@ footer {
 }
 
 .imgGallery {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
 
-  .imgWrapper {
-    /* flex settings can be basically anything */
-    flex: 1 0 auto;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border: 25px solid white;
-    @media (min-width: 400px) {
-      width: 50%;
-    }
-    @media (min-width: 900px) {
-      width: 30%;
-    }
-  }
-
-  .imgWrapper:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
+  .portrait {
+    width: 50%;
   }
 }
+// .imgGallery {
+//   display: flex;
+//   flex-wrap: wrap;
+
+//   .imgWrapper {
+//     /* flex settings can be basically anything */
+//     flex: 1 0 auto;
+//     height: auto;
+//     background-size: cover;
+//     background-position: center;
+//     width: 100%;
+//     border: 25px solid white;
+//     @media (min-width: 400px) {
+//       width: 50%;
+//     }
+//     @media (min-width: 900px) {
+//       width: 30%;
+//     }
+//   }
+
+//   .imgWrapper:before {
+//     content: "";
+//     display: block;
+//     padding-top: 100%;
+//   }
+// }
 
 .contact {
   label {

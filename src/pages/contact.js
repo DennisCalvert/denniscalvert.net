@@ -6,15 +6,15 @@ export default function Component() {
     <Layout>
       <main className="contact contentWrapper">
         <div>256-339-7048</div>
-        <div>
-          <label>Name</label>
-          <input type="text" name="name" />
-          <label>Email</label>
-          <input type="text" name="email" />
-          <label>Message</label>
-          <textarea />
+        <form>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <label htmlFor="email">Email</label>
+          <input type="text" id="email" name="email" />
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" />
           <button>Send</button>
-        </div>
+        </form>
       </main>
     </Layout>
   );
