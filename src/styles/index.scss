@@ -107,6 +107,7 @@ section {
 }
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 ol,
 ul {
@@ -147,12 +148,27 @@ nav {
     padding-left: 25px;
   }
 }
+
+.mobileNavIcon {
+  line-height: 0.5em;
+  visibility: hidden;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+nav.active {
+  transform: translateX(0);
+}
 @media (max-width: 800px) {
+  .mobileNavIcon {
+    visibility: visible;
+  }
   nav {
     background-color: rgba(255, 255, 255);
-    height: 100vh;
+    // height: 100vh;
     position: absolute;
-    top: 0;
+    top: 80px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -166,7 +182,7 @@ nav {
   }
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 h2 {
   font-size: 1.5em;
@@ -273,6 +289,7 @@ footer {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    box-sizing: border-box;
   }
   textarea {
     min-height: 250px;
@@ -280,12 +297,17 @@ footer {
   button {
     display: block;
     margin: 25px auto;
-    padding: 25px;
+    padding: 15px;
     border: 0;
     border-radius: 3px;
     background-color: rgb(13, 133, 8);
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    transition: all 0.2s;
+    opacity: 1;
+    &:disabled {
+      opacity: 0.5;
+    }
   }
 }
 

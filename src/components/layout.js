@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/index.scss";
 
 export default function Layout({ children }) {
+  const [isNavVisible, setIsNavVisible] = useState(false);
+
+  const handleNavClick = () => setIsNavVisible(!isNavVisible);
   return (
     <>
       <header>
         <a href="/">
           <h1>Dennis Calvert</h1>
         </a>
-        <nav>
+        <button className="mobileNavIcon" onClick={handleNavClick}>
+          &mdash;
+          <br /> &mdash; <br />
+          &mdash;
+        </button>
+        <nav className={isNavVisible ? "active" : ""}>
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
           <a href="/">Photography</a>
