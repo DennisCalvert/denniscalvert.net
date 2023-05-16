@@ -21,7 +21,7 @@ export default function Layout({ children }) {
           <a href="/contact">Contact</a>
           <a href="/">Photography</a>
           <a href="/music">Music</a>
-          {/* <a href="/books">Books</a> */}
+          <a href="/books">Books</a>
           <a href="/video">Video</a>
         </nav>
       </header>
