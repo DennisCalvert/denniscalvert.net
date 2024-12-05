@@ -61,10 +61,15 @@
       /* Main Content */
       main {
         padding: 2rem;
-        max-width: 1400px;
+        max-width: 700px;
         margin: 0 auto;
       }
 
+      @media (min-width: 1250px) {
+        main {
+          max-width: 1400px;
+        }
+      }
       section {
         margin-bottom: 2rem;
       }
@@ -77,6 +82,20 @@
         margin-bottom: 1rem;
       }
 
+      @media (min-width: 1250px) {
+        #info-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        #about,
+        #contact {
+          width: 30%;
+        }
+      }
       /* Vertical Portfolio */
       .portfolio {
         display: flex;
@@ -99,6 +118,12 @@
         border-radius: 5px;
       }
 
+      @media (min-width: 1250px) {
+        .portfolio-item img {
+          max-width: 70%;
+        }
+      }
+
       .portfolio-item h3 {
         margin-bottom: 0.5rem;
       }
@@ -116,7 +141,7 @@
   <body>
     <header>
       <h1>Dennis Calvert</h1>
-      <p>Creating beautiful and functional websites since 2007.</p>
+      <p>Building the web since 2008.</p>
     </header>
 
     <!-- <nav>
@@ -126,41 +151,43 @@
     </nav> -->
 
     <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm Dennis Calvert, a passionate software engineer and web
-          designer with a love for crafting visually appealing and user-friendly
-          apps & websites.
-        </p>
-      </section>
+      <section id="info-container">
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            Hello! I'm Dennis Calvert, a passionate software engineer and web
+            designer with a love for crafting visually appealing and
+            user-friendly apps & websites. I've been working in software since
+            2008 and have extensive experience from startups all the way to
+            massive online properties with millions of daily users.
+          </p>
+          <p>
+            <a
+              href="https://magiccityfilmmakers.s3.us-east-2.amazonaws.com/assets/Dennis+Calvert+Resume.pdf"
+              target="_blank"
+              >Resume</a
+            >
+          </p>
+        </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Have a project in mind? Let's work together!</p>
-        <p>
-          Email:
-          <a href="mailto:dennis@denniscalvert.net">dennis@denniscalvert.net</a>
-        </p>
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Have a project in mind? Let's work together!</p>
+          <p>
+            Email:
+            <a href="mailto:dennis@denniscalvert.net"
+              >dennis@denniscalvert.net</a
+            >
+          </p>
+          <p>
+            Phone:
+            <a href="tel:2563390748">(256) 339-0748</a>
+          </p>
+        </section>
       </section>
-
       <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolio">
-          <div class="portfolio-item">
-            <img
-              src="https://magiccityfilmmakers.s3.us-east-2.amazonaws.com/galleries/674cd889c6e067a294f724f9/images/l/67510ce1638388fc9bffb5de.jpeg"
-              alt="Project 1"
-            />
-            <div>
-              <h3>
-                <a href="https://denniscalvert.photography" target="_blank"
-                  >denniscalvert.photography</a
-                >
-              </h3>
-              <p>A photography portfolio.</p>
-            </div>
-          </div>
           <div class="portfolio-item">
             <img
               src="https://magiccityfilmmakers.s3.us-east-2.amazonaws.com/galleries/674cd889c6e067a294f724f9/images/l/6751293c638388fc9bffb65c.jpeg"
@@ -191,6 +218,20 @@
                 Login: <br />
                 user: test@gmail.com<br />pw: qwerty
               </p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="https://magiccityfilmmakers.s3.us-east-2.amazonaws.com/galleries/674cd889c6e067a294f724f9/images/l/67510ce1638388fc9bffb5de.jpeg"
+              alt="Project 1"
+            />
+            <div>
+              <h3>
+                <a href="https://denniscalvert.photography" target="_blank"
+                  >denniscalvert.photography</a
+                >
+              </h3>
+              <p>A photography portfolio.</p>
             </div>
           </div>
           <div class="portfolio-item">
